@@ -40,4 +40,4 @@ RUN groupmod -o -g 666 vdr \
 EXPOSE 2004 3000 6419 8002 8008 4010-4020/udp 34890
 VOLUME /recordings  /etc/vdr /vdr/config /vdr/cache
 
-ENTRYPOINT ["/init"]
+CMD ["/bin/bash"]
