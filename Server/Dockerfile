@@ -40,6 +40,5 @@ COPY /etc/vdr/svdrphosts.conf /etc/vdr/svdrphosts.conf
 #COPY etc/rsyslog.conf /etc/
 
 EXPOSE 2004 3000 6419 8002 8008 4010-4020/udp 34890
-VOLUME /recordings  /etc/vdr /vdr/config /vdr/cache
-
+VOLUME /etc/vdr /var/lib/vdr /var/lib/video
 CMD ["/bin/bash"]
